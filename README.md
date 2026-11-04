@@ -67,7 +67,7 @@ The smoke test checks the 5/5/6/8 world layout, that World 4 is the first Dark W
 
 ## Deploy
 
-The beta is hosted on Netlify. Drag the `web/` folder (or `npm run zip` → `dist/portal-shoot-site.zip`) onto **Netlify → Deploys**. Do this from a computer: uploads from a phone fail with "Unable to read file".
+The beta is hosted on Netlify and **deploys automatically**: every push to `main` publishes the `web/` folder (see `netlify.toml`). No build step.
 
 When you ship a new version, bump `VERSION` in `web/sw.js` so installed copies update.
 
