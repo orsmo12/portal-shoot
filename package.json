@@ -1,0 +1,16 @@
+{
+  "name": "portal-shoot",
+  "version": "0.10.0",
+  "private": true,
+  "description": "Portal Shoot — a glowing physics puzzle: slingshot the ball into the sun portal with exactly the right number of bounces.",
+  "type": "module",
+  "scripts": {
+    "serve": "npx --yes serve web -l 8080",
+    "build:artifact": "node tools/build-artifact.mjs",
+    "zip": "cd web && zip -r -D ../dist/portal-shoot-site.zip index.html manifest.webmanifest sw.js icons",
+    "test": "node tests/smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  }
+}
